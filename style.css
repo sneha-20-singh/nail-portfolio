@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Bungee+Spice&family=Carter+One&family=Montserrat:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #a34339;
+  --secondary-color: #e89e91;
+  --text-dark: #0e0d16;
+  --text-light: #767268;
+  --extra-light: #f7f8fd;
+  --white: #ffffff;
+  --max-width: 1200px;
+  /* color: rgb(247,198,184);*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: #333;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background: #fff5f7;
+  border-bottom: 1px solid #f1d5db;
+  z-index: 1000;
+}
+
+.nav_container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.nav_logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #a34339;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nav_logo span {
+  color: #c96b85;
+}
+
+/* LINKS */
+.nav_links {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Hover underline */
+.nav_links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #c96b85;
+  transition: 0.3s;
+}
+
+.nav_links li a:hover::after {
+  width: 100%;
+}
+
+/* BOOK BUTTON */
+.btn-book {
+  padding: 7px 18px;
+  border-radius: 20px;
+  border: none;
+  background: #c96b85;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-book:hover {
+  background: transparent;
+  color: #c96b85;
+  border: 1px solid #c96b85;
+}
+
+/* MOBILE MENU */
+.nav_menu_btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .left_links,
+  .right_links,
+  .btn-book {
+    display: none;
+  }
+
+  .nav_menu_btn {
+    display: block;
+  }
+
+  .nav_container {
+    justify-content: space-between;
+  }
+}
