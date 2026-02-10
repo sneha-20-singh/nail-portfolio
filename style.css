@@ -112,16 +112,96 @@ nav {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .left_links,
-  .right_links,
-  .btn-book {
+  .right_links {
     display: none;
   }
 
+  /*Humburger*/
   .nav_menu_btn {
     display: block;
+    font-size: 28px;
+    cursor: pointer;
   }
 
+  /*Stack Container*/
   .nav_container {
-    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  /*Dropdown menu*/
+  .left_links.show,
+  .right_links.show {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0;
+    border-top: 1px solid #f1d5db;
+    width: 100%;
+  }
+
+  /*Links*/
+  .nav_links li {
+    text-align: center;
+  }
+  .nav_links li a {
+    font-size: 1rem;
+    padding: 10px 0;
+    color: #444;
+    display: block;
+  }
+  /*Book Button*/
+  .right_links.show .btn-book {
+    margin: 10px auto 0;
+    display: block;
+  }
+  .nav_logo {
+    display: block;
+    font-size: 1.3rem;
+  }
+}
+
+/*=====================HERO SECTION =======================*/
+.hero {
+  height: 90vh;
+  width: 100%;
+  background: url("src/nails5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding-left: 80px;
+}
+
+.hero-content h1 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 18px;
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+    aspect-ratio: 3 / 4;
+  }
+
+  .hero-content {
+    padding: 0 24px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
   }
 }
