@@ -109,7 +109,74 @@ nav {
   cursor: pointer;
 }
 
-/* RESPONSIVE */
+/*=====================HERO SECTION =======================*/
+.hero {
+  height: 90vh;
+  width: 100%;
+  background: url("src/nails5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding-left: 80px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 18px;
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.about {
+  background: #f8f2f4;
+  padding: 80px 10%;
+}
+
+.about_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.about_image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+.about_content {
+  max-width: 500px;
+}
+
+.about_content h2 {
+  font-size: 36px;
+  color: #5a2d2d;
+  margin-bottom: 20px;
+}
+
+.about_content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .left_links,
   .right_links {
@@ -156,42 +223,6 @@ nav {
     display: block;
     font-size: 1.3rem;
   }
-}
-
-/*=====================HERO SECTION =======================*/
-.hero {
-  height: 90vh;
-  width: 100%;
-  background: url("src/nails5.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.hero-content {
-  max-width: 600px;
-  padding-left: 80px;
-}
-
-.hero-content h1 {
-  font-size: 3.4rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: 18px;
-}
-
-.hero-content p {
-  font-size: 1.05rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 28px;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
   .hero {
     height: 70vh;
     aspect-ratio: 3 / 4;
