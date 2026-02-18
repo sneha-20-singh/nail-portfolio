@@ -492,6 +492,9 @@ strong {
 .footer-col ul li a:hover {
   color: #ff69b4;
 }
+.footer-col ul li:hover {
+  color: #ff69b4;
+}
 
 /* Bottom */
 .footer-bottom {
