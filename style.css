@@ -186,7 +186,9 @@ nav {
 }
 
 .hero-btn:hover {
-  background: #c4456f;
+  background: transparent;
+  color: #ff6f9c;
+  border: 2px solid #ff6f9c;
   transform: translateY(-3px);
 }
 
@@ -483,7 +485,7 @@ nav {
   font-size: 36px;
   margin-bottom: 50px;
   font-weight: 600;
-  color: #ffffff;
+  color: #ff6f9c;
 }
 /*
 .section-title::after {
