@@ -90,7 +90,8 @@ nav {
   padding: 7px 18px;
   border-radius: 20px;
   border: none;
-  background: #ff6f9c;
+
+  background: linear-gradient(90deg, #ff5fa2, #ff2e7a);
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -388,7 +389,7 @@ nav {
 .show-more button {
   padding: 12px 30px;
   border-radius: 30px;
-  background: #c96b85;
+  background: linear-gradient(90deg, #ff5fa2, #ff2e7a);
   color: white;
   border: none;
   font-size: 14px;
@@ -536,7 +537,7 @@ nav {
   margin: 20px;
   width: calc(100% - 40px);
   padding: 12px;
-  background: #ff6f9c;
+  background: linear-gradient(90deg, #ff5fa2, #ff2e7a);
   border: none;
   border-radius: 8px;
   color: white;
@@ -613,7 +614,7 @@ nav {
 /* Button */
 .btn-primary {
   font-size: 16px;
-  background-color: #ff6f9c;
+  background: linear-gradient(90deg, #ff5fa2, #ff2e7a);
   color: #ffffff;
   padding: 12px;
   border: none;
