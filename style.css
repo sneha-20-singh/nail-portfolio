@@ -103,6 +103,11 @@ nav {
   color: #ff6f9c;
   border: 2px solid #ff6f9c;
 }
+#btn-book-btn:hover {
+  background: linear-gradient(135deg, #2b1f24, #3b2a33);
+  color: #ff6f9c;
+  border: 2px solid #ff6f9c;
+}
 
 /* MOBILE MENU */
 .nav_menu_btn {
