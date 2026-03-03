@@ -1,11 +1,9 @@
 //NAVBAR JS
 const menuBtn = document.querySelector(".nav_menu_btn");
-const leftLinks = document.querySelector(".left_links");
-const rightLinks = document.querySelector(".right_links");
+const navLinks = document.querySelector(".nav_links");
 
 menuBtn.addEventListener("click", () => {
-  leftLinks.classList.toggle("show");
-  rightLinks.classList.toggle("show");
+  navLinks.classList.toggle("active");
 });
 //GALLERY JS
 const buttons = document.querySelectorAll(".gallery-buttons button");
@@ -66,6 +64,5 @@ showMoreButton.addEventListener("click", () => {
   showAllImages = true;
   updateGallery();
 });
-
 
 updateGallery();
