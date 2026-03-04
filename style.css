@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Bungee+Spice&family=Carter+One&family=Montserrat:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-:root {
-  --max-width: 1200px;
-}
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +8,17 @@
 }
 
 html {
+  width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
+}
+section {
+  width: 100%;
 }
 body {
   background: #fff5f8;
   color: #fff;
+  overflow-x: hidden;
 }
 
 /* ================= NAVBAR BASE ================= */
@@ -25,7 +28,6 @@ body {
   position: fixed;
   top: 0;
   z-index: 1000;
-  padding: 14px 30px;
 
   backdrop-filter: blur(12px);
 
@@ -36,14 +38,14 @@ body {
     #a8325f 75%,
     #d94f7a 100%
   );
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.08);*/
 }
 
 .nav_container {
-  width: 90%;
-  max-width: 1300px;
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
-
+  padding: 14px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,12 +55,12 @@ body {
   font-size: 22px;
   font-weight: 700;
   color: white;
+  white-space: nowrap;
 }
 
 .nav_logo span {
-  color: #ff4da6; 
+  color: #ff4da6;
 }
-
 
 .nav_links {
   display: flex;
@@ -91,7 +93,7 @@ body {
 }
 
 .nav_links a:hover {
-  color: #e293bb;
+  color: #ff6f9c;
 }
 
 .btn-book {
@@ -122,7 +124,6 @@ body {
   border: 2px solid #ff6f9c;
 }
 
-
 .nav_menu_btn {
   display: none;
   font-size: 26px;
@@ -132,7 +133,10 @@ body {
 
 /* ================= MOBILE RESPONSIVE CSS================= */
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
+  .nav_menu_btn {
+    display: block;
+  }
   .nav_links {
     position: absolute;
     top: 100%;
@@ -147,19 +151,38 @@ body {
 
     padding: 30px 0;
 
-    max-height: 0;
+    display: none;
+    /* max-height: 0;
     overflow: hidden;
+    
     transition: max-height 0.4s ease;
+    */
   }
 
   .nav_links.active {
-    max-height: 500px;
-  }
-
-  .nav_menu_btn {
-    display: block;
+    display: flex;
+    /* max-height: 500px;*/
   }
 }
+@media (max-width: 400px) {
+  .nav_logo {
+    font-size: 16px;
+  }
+  .btn-book {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+}
+/*====================== TABLET==========================*/
+@media (max-width: 1024px) {
+  .nav_links {
+    gap: 18px;
+  }
+  .nav_logo {
+    font-size: 18px;
+  }
+}
+
 /*=====================HERO SECTION =======================*/
 
 .hero {
