@@ -379,6 +379,76 @@ body {
   margin-bottom: 15px;
 }
 
+/*===================== TABLET RESPONSIVE ===============*/
+@media (max-width: 1024px) {
+  .about_container {
+    gap: 50px;
+    padding: 0 24px;
+  }
+  .about_image {
+    width: 360px;
+    height: 360px;
+  }
+  .abt-heading {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 20px;
+  }
+
+  .about_container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .about_image {
+    width: 280px;
+    height: 300px;
+  }
+
+  .collage {
+    width: 170px;
+    height: 220px;
+  }
+
+  .about_content {
+    max-width: 500px;
+  }
+
+  .abt-heading {
+    font-size: 28px;
+  }
+
+  .about_content p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+@media (max-width: 400px) {
+  .about_image {
+    width: 240px;
+    height: 260px;
+  }
+
+  .collage {
+    width: 150px;
+    height: 200px;
+  }
+
+  .abt-heading {
+    font-size: 24px;
+  }
+
+  .btn-book {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
 /*===================== GALLERY =========================*/
 .gallery {
   background: #1f1f1f;
